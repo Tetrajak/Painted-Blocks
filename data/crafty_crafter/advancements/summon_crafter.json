@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"placed_block": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:structure_void",
+				"item": {
+					"nbt": "{CraftyCrafter:1b}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "crafty_crafter:crafter_ray_start"
+	}
+}

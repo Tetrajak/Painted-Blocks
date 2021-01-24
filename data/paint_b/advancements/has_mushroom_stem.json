@@ -1,0 +1,17 @@
+{
+  "rewards": {
+    "function": "paint_b:replaceitem/mushroom_stem"
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:mushroom_stem"
+          }
+        ]
+      }
+    }
+  }
+}

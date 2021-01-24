@@ -1,0 +1,447 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+							"name": "paint_b:placement_item/red_mushroom_block",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": -6.0,
+                    "max": 2.0,
+                    "type": "minecraft:uniform"
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 0
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "minecraft:red_mushroom"
+            }
+          ]
+        }
+      ],
+			"conditions": [
+				{
+					"condition": "minecraft:alternative",
+					"terms": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":false,
+								"north":false,
+								"south":false,
+								"up":false,
+								"west":true
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":false,
+								"north":false,
+								"south":false,
+								"up":true,
+								"west":true
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":false,
+								"north":false,
+								"south":true,
+								"up":false,
+								"west":false
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":false,
+								"north":false,
+								"south":true,
+								"up":false,
+								"west":true
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":false,
+								"north":false,
+								"south":true,
+								"up":true,
+								"west":false
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":false,
+								"north":false,
+								"south":true,
+								"up":true,
+								"west":true
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":false,
+								"north":true,
+								"south":false,
+								"up":false,
+								"west":false
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":false,
+								"north":true,
+								"south":false,
+								"up":false,
+								"west":true
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":false,
+								"north":true,
+								"south":false,
+								"up":true,
+								"west":false
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":false,
+								"north":true,
+								"south":false,
+								"up":true,
+								"west":true
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":true,
+								"north":false,
+								"south":false,
+								"up":false,
+								"west":false
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":true,
+								"north":false,
+								"south":false,
+								"up":true,
+								"west":false
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":true,
+								"north":false,
+								"south":true,
+								"up":false,
+								"west":false
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":true,
+								"north":false,
+								"south":true,
+								"up":true,
+								"west":false
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":true,
+								"north":true,
+								"south":false,
+								"up":false,
+								"west":false
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":true,
+								"north":true,
+								"south":false,
+								"up":true,
+								"west":false
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":false,
+								"north":false,
+								"south":false,
+								"up":true,
+								"west":false
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":true,
+								"east":true,
+								"north":true,
+								"south":true,
+								"up":true,
+								"west":true
+							}
+						}
+					]
+				}
+			]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/mushroom_inside",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":false,
+								"east":false,
+								"north":false,
+								"south":false,
+								"up":false,
+								"west":false
+							}
+						}
+					]
+				},
+        {
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/thatch",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":true,
+								"east":true,
+								"north":true,
+								"south":true,
+								"up":true,
+								"west":false
+							}
+						}
+					]
+				},
+        {
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/weathered_chiseled_stone",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":true,
+								"east":true,
+								"north":true,
+								"south":true,
+								"up":false,
+								"west":true
+							}
+						}
+					]
+				},
+        {
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/weathered_cobblestone",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":true,
+								"east":true,
+								"north":true,
+								"south":true,
+								"up":false,
+								"west":false
+							}
+						}
+					]
+				},
+        {
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/veined_basalt",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":true,
+								"east":true,
+								"north":true,
+								"south":false,
+								"up":true,
+								"west":true
+							}
+						}
+					]
+				},
+        {
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/weathered_smooth_stone",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":true,
+								"east":true,
+								"north":true,
+								"south":false,
+								"up":true,
+								"west":false
+							}
+						}
+					]
+				},
+        {
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/sandy_weathered_stone_bricks",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":true,
+								"east":true,
+								"north":true,
+								"south":false,
+								"up":false,
+								"west":true
+							}
+						}
+					]
+				},
+        {
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/sandy_weathered_chiseled_stone",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":true,
+								"east":true,
+								"north":true,
+								"south":false,
+								"up":false,
+								"west":false
+							}
+						}
+					]
+				},
+        {
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/veined_quartz",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:red_mushroom_block",
+							"properties": {
+								"down":true,
+								"east":true,
+								"north":false,
+								"south":true,
+								"up":true,
+								"west":true
+							}
+						}
+					]
+				}
+			]
+		}
+  ]
+}

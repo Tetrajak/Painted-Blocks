@@ -1,0 +1,10 @@
+{
+  "rewards": {
+    "function": "paint_b:replace_old"
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

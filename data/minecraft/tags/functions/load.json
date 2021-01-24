@@ -1,0 +1,8 @@
+{
+	"replace": "false",
+	"values": [
+		"quatro:load",
+		"crafty_crafter:load",
+		"paint_b:load"
+	]
+}

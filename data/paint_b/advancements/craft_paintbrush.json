@@ -1,0 +1,35 @@
+{
+  "rewards": {
+    "function": "paint_b:craft_paintbrush"
+  },
+  "criteria": {
+    "has_item0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stick",
+						"nbt": "{display:{Name:\"{\\\"text\\\":\\\"Paintbrush\\\"}\"}}"
+          }
+        ]
+      }
+    },
+    "has_item1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:stick",
+						"nbt": "{display:{Name:\"{\\\"text\\\":\\\"paintbrush\\\"}\"}}"
+          }
+        ]
+      }
+    }
+  },
+	"requirements": [
+		[
+			"has_item0",
+			"has_item1"
+		]
+	]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"translate": "item.painted_blocks.lemurian_labradorite_polished","italic":false}
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:300032, PaintedBlock:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

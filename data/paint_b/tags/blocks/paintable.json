@@ -1,0 +1,30 @@
+{
+	"replace": "false",
+	"values": [
+		"minecraft:stone",
+		"minecraft:cobblestone",
+		"minecraft:chiseled_stone_bricks",
+		"minecraft:stone_bricks",
+		"minecraft:cracked_stone_bricks",
+		"minecraft:smooth_stone",
+		"minecraft:purpur_block",
+		"minecraft:purpur_pillar",
+		"minecraft:brown_mushroom_block",
+		"minecraft:red_mushroom_block",
+		"minecraft:mushroom_stem",
+		"minecraft:hay_block",
+		"#minecraft:wool",
+		"#minecraft:carpets",
+		"#paint_b:terracotta",
+		"#paint_b:glass",
+		"#paint_b:glass_pane",
+		"#paint_b:glazed_terracotta",
+		"#paint_b:concrete",
+		"#paint_b:concrete_powder",
+		"#paint_b:log",
+		"#paint_b:planks",
+		"#paint_b:stripped_log",
+		"#paint_b:stripped_wood",
+		"#paint_b:wood"
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"placed_block": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:structure_void",
+				"item": {
+					"nbt": "{CustomModelData:300027}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "paint_b:place_block/wattle_and_daub_frame"
+	}
+}

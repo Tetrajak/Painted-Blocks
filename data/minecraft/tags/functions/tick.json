@@ -1,0 +1,7 @@
+{
+	"replace": "false",
+	"values": [
+		"crafty_crafter:tick",
+		"paint_b:tick"
+	]
+}

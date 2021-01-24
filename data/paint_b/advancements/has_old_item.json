@@ -1,0 +1,18 @@
+{
+  "rewards": {
+    "function": "paint_b:replace_old"
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:snowball",
+						"nbt": "{PaintedBlock:1b}"
+          }
+        ]
+      }
+    }
+  }
+}

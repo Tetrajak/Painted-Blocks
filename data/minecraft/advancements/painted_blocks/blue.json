@@ -1,0 +1,23 @@
+{
+	"parent": "minecraft:painted_blocks/crafter",
+	"display": {
+		"icon": {
+			"item": "minecraft:blue_dye"
+		},
+		"title": {
+			"translate": "advancements.painted_blocks.blue_dye.title"
+		},
+		"description": {
+			"translate": "advancements.painted_blocks.blue_dye.description"
+		},
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+	},
+  "criteria": {
+    "tick": {
+			"trigger": "minecraft:tick"
+		}
+  }
+}

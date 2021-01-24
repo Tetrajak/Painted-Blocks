@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"translate": "item.painted_blocks.grass_stone_tile","italic":false}
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:300039, PaintedBlock:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

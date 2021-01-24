@@ -1,0 +1,2 @@
+execute at @a[tag=paint_b.find] as @e[type=minecraft:villager, tag=new_crafty, distance=..16, sort=nearest, limit=1] at @s run function paint_b:modify_painter
+tag @a[tag=paint_b.find] remove paint_b.find

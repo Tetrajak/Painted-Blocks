@@ -1,0 +1,1243 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/mushroom_stem",
+					"conditions": [
+						{
+							"condition": "minecraft:match_tool",
+							"predicate": {
+								"enchantments": [
+									{
+										"enchantment": "minecraft:silk_touch",
+										"levels": {
+											"min": 1
+										}
+									}
+								]
+							}
+						},
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": true,
+								"south": true,
+								"up": false,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:alternatives",
+          "children": [
+						{
+							"type": "minecraft:loot_table",
+							"name": "paint_b:placement_item/red_mushroom_block",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+						},
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": -6.0,
+                    "max": 2.0,
+                    "type": "minecraft:uniform"
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 0
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "minecraft:red_mushroom"
+            }
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": false,
+								"north": false,
+								"south": false,
+								"up": false,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:alternatives",
+          "children": [
+						{
+              "type": "minecraft:loot_table",
+							"name": "paint_b:placement_item/brown_mushroom_block",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+						},
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": -6.0,
+                    "max": 2.0,
+                    "type": "minecraft:uniform"
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 0
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "minecraft:brown_mushroom"
+            }
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": true,
+								"north": true,
+								"south": true,
+								"up": true,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/mushroom_inside",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": false,
+								"south": false,
+								"up": false,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:loot_table",
+							"name": "paint_b:placement_item/basalt",
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"enchantments": [
+											{
+												"enchantment": "minecraft:silk_touch",
+												"levels": {
+													"min": 1
+												}
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"type": "minecraft:loot_table",
+							"name": "paint_b:placement_item/basalt_cobblestone"
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": true,
+								"north": true,
+								"south": true,
+								"up": false,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/basalt_cobblestone",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": true,
+								"north": true,
+								"south": true,
+								"up": true,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/basalt_brick",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": true,
+								"north": true,
+								"south": true,
+								"up": false,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/basalt_polished",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": true,
+								"north": true,
+								"south": false,
+								"up": true,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/purpleheart_wood",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": true,
+								"north": true,
+								"south": false,
+								"up": true,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/purpleheart_log",
+					"conditions": [
+						{
+							"condition": "minecraft:alternative",
+							"terms": [
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": true,
+										"north": true,
+										"south": false,
+										"up": false,
+										"west": true
+									}
+								},
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": true,
+										"north": true,
+										"south": false,
+										"up": false,
+										"west": false
+									}
+								},
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": true,
+										"north": false,
+										"south": true,
+										"up": true,
+										"west": true
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/purpleheart_stripped_wood",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": true,
+								"north": false,
+								"south": true,
+								"up": true,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/purpleheart_stripped_log",
+					"conditions": [
+						{
+							"condition": "minecraft:alternative",
+							"terms": [
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": true,
+										"north": false,
+										"south": true,
+										"up": false,
+										"west": true
+									}
+								},
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": true,
+										"north": false,
+										"south": true,
+										"up": false,
+										"west": false
+									}
+								},
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": true,
+										"north": false,
+										"south": false,
+										"up": true,
+										"west": true
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/purpleheart_planks",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": true,
+								"north": false,
+								"south": false,
+								"up": true,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/ebony_wood",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": true,
+								"north": false,
+								"south": false,
+								"up": false,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/ebony_log",
+					"conditions": [
+						{
+							"condition": "minecraft:alternative",
+							"terms": [
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": true,
+										"north": false,
+										"south": false,
+										"up": false,
+										"west": false
+									}
+								},
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": false,
+										"north": true,
+										"south": true,
+										"up": true,
+										"west": true
+									}
+								},
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": false,
+										"north": true,
+										"south": true,
+										"up": true,
+										"west": false
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/ebony_stripped_wood",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": false,
+								"north": true,
+								"south": true,
+								"up": false,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/ebony_stripped_log",
+					"conditions": [
+						{
+							"condition": "minecraft:alternative",
+							"terms": [
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": false,
+										"north": true,
+										"south": true,
+										"up": false,
+										"west": false
+									}
+								},
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": false,
+										"north": true,
+										"south": false,
+										"up": true,
+										"west": true
+									}
+								},
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": false,
+										"north": true,
+										"south": false,
+										"up": true,
+										"west": false
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/ebony_planks",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": false,
+								"north": true,
+								"south": false,
+								"up": false,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/verawood_wood",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": false,
+								"north": true,
+								"south": false,
+								"up": false,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/verawood_log",
+					"conditions": [
+						{
+							"condition": "minecraft:alternative",
+							"terms": [
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": false,
+										"north": false,
+										"south": true,
+										"up": true,
+										"west": true
+									}
+								},
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": false,
+										"north": false,
+										"south": true,
+										"up": true,
+										"west": false
+									}
+								},
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": false,
+										"north": false,
+										"south": true,
+										"up": false,
+										"west": true
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/verawood_stripped_wood",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": true,
+								"east": false,
+								"north": false,
+								"south": true,
+								"up": false,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/verawood_stripped_log",
+					"conditions": [
+						{
+							"condition": "minecraft:alternative",
+							"terms": [
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": false,
+										"north": false,
+										"south": false,
+										"up": true,
+										"west": true
+									}
+								},
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": false,
+										"north": false,
+										"south": false,
+										"up": true,
+										"west": false
+									}
+								},
+								{
+									"condition": "minecraft:block_state_property",
+									"block": "minecraft:mushroom_stem",
+									"properties": {
+										"down": true,
+										"east": false,
+										"north": false,
+										"south": false,
+										"up": false,
+										"west": true
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/verawood_planks",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": true,
+								"south": true,
+								"up": true,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/wrought_iron_block",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": true,
+								"south": true,
+								"up": true,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/rusty_wrought_iron_block",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": true,
+								"south": true,
+								"up": false,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/rocky_dirt",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": true,
+								"south": false,
+								"up": true,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/sandstone_brick",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": true,
+								"south": false,
+								"up": true,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/wattle_and_daub_frame",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": true,
+								"south": false,
+								"up": false,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/wattle_and_daub_pillar",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": true,
+								"south": false,
+								"up": false,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/wattle_and_daub_diagonal_frame",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": false,
+								"south": true,
+								"up": true,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/wattle_and_daub_cross_frame",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": false,
+								"south": true,
+								"up": true,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/lemurian_labradorite",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": false,
+								"south": true,
+								"up": false,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/lemurian_labradorite_polished",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": false,
+								"south": true,
+								"up": false,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/lemurian_labradorite_brick",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": false,
+								"south": false,
+								"up": true,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/lemurian_labradorite_chiseled",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": false,
+								"south": false,
+								"up": true,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/morklila_brick",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": false,
+								"south": false,
+								"up": false,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/morklila_pillar",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": true,
+								"north": false,
+								"south": false,
+								"up": false,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/sandstone_reinforced",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": true,
+								"south": true,
+								"up": true,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/terracotta_tile",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": true,
+								"south": true,
+								"up": true,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/grass_stone_tile",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": true,
+								"south": true,
+								"up": false,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/brick_weathered",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": true,
+								"south": true,
+								"up": false,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/stone_bricks_weathered",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": true,
+								"south": false,
+								"up": true,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/chordzol",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": true,
+								"south": false,
+								"up": true,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/chordzol_patchy",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": true,
+								"south": false,
+								"up": false,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/thatch",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": true,
+								"south": false,
+								"up": false,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/weathered_chiseled_stone",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": false,
+								"south": true,
+								"up": true,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/weathered_cobblestone",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": false,
+								"south": true,
+								"up": true,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/veined_basalt",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": false,
+								"south": true,
+								"up": false,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/weathered_smooth_stone",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": false,
+								"south": true,
+								"up": false,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/sandy_weathered_stone_bricks",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": false,
+								"south": false,
+								"up": true,
+								"west": true
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/sandy_weathered_chiseled_stone",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": false,
+								"south": false,
+								"up": true,
+								"west": false
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "paint_b:placement_item/veined_quartz",
+					"conditions": [
+						{
+							"condition": "minecraft:block_state_property",
+							"block": "minecraft:mushroom_stem",
+							"properties": {
+								"down": false,
+								"east": false,
+								"north": false,
+								"south": false,
+								"up": false,
+								"west": true
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

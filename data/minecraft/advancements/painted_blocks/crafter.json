@@ -1,0 +1,24 @@
+{
+	"parent": "minecraft:painted_blocks/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:snowball",
+			"nbt": "{CustomModelData:300061}"
+		},
+		"title": {
+			"translate": "advancements.painted_blocks.crafter.title"
+		},
+		"description": {
+			"translate": "advancements.painted_blocks.crafter.description"
+		},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+	},
+  "criteria": {
+    "tick": {
+			"trigger": "minecraft:tick"
+		}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"translate": "item.painted_blocks.sandy_weathered_chiseled_stone","italic":false}
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:300050, PaintedBlock:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

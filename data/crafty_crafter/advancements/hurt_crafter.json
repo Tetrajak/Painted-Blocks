@@ -1,0 +1,16 @@
+{
+  "rewards": {
+    "function": "crafty_crafter:hurt_crafter"
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+					"type": "minecraft:villager",
+					"nbt": "{Tags:[\"crafty_crafter\"]}"
+				}
+      }
+    }
+  }
+}

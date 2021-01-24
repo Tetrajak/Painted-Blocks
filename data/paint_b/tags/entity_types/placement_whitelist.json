@@ -1,0 +1,18 @@
+{
+	"replace": "false",
+	"values": [
+		"minecraft:area_effect_cloud",
+		"minecraft:arrow",
+		"minecraft:egg",
+		"minecraft:experience_bottle",
+		"minecraft:experience_orb",
+		"minecraft:item",
+		"minecraft:item_frame",
+		"minecraft:firework_rocket",
+		"minecraft:fishing_bobber",
+		"minecraft:llama_spit",
+		"minecraft:potion",
+		"minecraft:snowball",
+		"minecraft:spectral_arrow"
+	]
+}

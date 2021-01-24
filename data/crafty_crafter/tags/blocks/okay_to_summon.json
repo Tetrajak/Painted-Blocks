@@ -1,0 +1,31 @@
+{
+	"replace": "false",
+	"values": [
+		"minecraft:air",
+		"minecraft:cave_air",
+		"minecraft:water",
+		"minecraft:torch",
+		"minecraft:wall_torch",
+		"minecraft:grass",
+		"minecraft:tall_grass",
+		"minecraft:fern",
+		"minecraft:dead_bush",
+		"minecraft:seagrass",
+		"minecraft:tall_seagrass",
+		"minecraft:brown_mushroom",
+		"minecraft:red_mushroom",
+		"minecraft:ladder",
+		"minecraft:vine",
+		"minecraft:lily_pad",
+		"minecraft:large_fern",
+		"minecraft:scaffolding",
+		"#minecraft:banners",
+		"#minecraft:buttons",
+		"#minecraft:corals",
+		"#minecraft:crops",
+		"#minecraft:rails",
+		"#minecraft:saplings",
+		"#minecraft:signs",
+		"#minecraft:flowers"
+	]
+}

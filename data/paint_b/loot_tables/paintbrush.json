@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.painted_blocks.paintbrush","italic":"false"}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+								{"translate":"lore.painted_blocks.paintbrush0","italic":"false", "color":"gray"},
+								{"translate":"lore.painted_blocks.paintbrush1","italic":"false", "color":"gray"}
+							]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:300060}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

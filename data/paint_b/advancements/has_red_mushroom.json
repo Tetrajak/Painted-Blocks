@@ -1,0 +1,17 @@
+{
+  "rewards": {
+    "function": "paint_b:replaceitem/red_mushroom_block"
+  },
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:red_mushroom_block"
+          }
+        ]
+      }
+    }
+  }
+}

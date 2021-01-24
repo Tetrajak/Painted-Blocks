@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"translate": "block.minecraft.red_mushroom_block","italic":false}
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:300002, PaintedBlock:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

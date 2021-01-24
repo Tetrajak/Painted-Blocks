@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"placed_block": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:structure_void",
+				"item": {
+					"nbt": "{BlockPainter:1b}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "paint_b:find_new_painter"
+	}
+}

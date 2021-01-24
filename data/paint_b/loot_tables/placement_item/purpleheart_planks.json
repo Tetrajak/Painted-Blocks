@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"translate": "item.painted_blocks.purpleheart_planks","italic":false}
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:300012, PaintedBlock:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

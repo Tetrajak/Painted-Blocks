@@ -1,0 +1,1 @@
+execute if score #whose_turn quatro.dummy = #quatro_id crafty_crafter run function crafty_crafter:second

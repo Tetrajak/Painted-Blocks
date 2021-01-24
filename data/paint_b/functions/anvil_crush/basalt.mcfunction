@@ -1,0 +1,2 @@
+execute unless score #recipe_done anvil_crush matches 1.. if block ~ ~-0.5 ~ minecraft:mushroom_stem[down=true, east=true, north=true, south=false, up=true, west=true] positioned ~ ~-0.5 ~ align xyz run function paint_b:setblock/basalt
+execute unless score #recipe_done anvil_crush matches 1.. if block ~ ~-0.5 ~ minecraft:brown_mushroom_block[down=true, east=true, north=true, south=false, up=true, west=true] positioned ~ ~-0.5 ~ align xyz run function paint_b:setblock/basalt

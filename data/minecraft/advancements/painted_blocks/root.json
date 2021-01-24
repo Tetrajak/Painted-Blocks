@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:carrot_on_a_stick",
+			"nbt": "{CustomModelData:300060}"
+		},
+		"title": {
+			"translate": "advancements.painted_blocks.root.title"
+		},
+		"description": {
+			"translate": "advancements.painted_blocks.root.description"
+		},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/block/paint_blocks/ebony_planks.png"
+	},
+  "criteria": {
+    "tick": {
+			"trigger": "minecraft:tick"
+		}
+  }
+}

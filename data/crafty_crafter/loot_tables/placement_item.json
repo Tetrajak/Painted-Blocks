@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_void",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"text":"Crafter Crafter","italic":"false"}
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CraftyCrafter:1b, Enchantments:[{id:\"minecraft:unbreaking\", lvl:1s}], HideFlags:1}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

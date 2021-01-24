@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"placed_block": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"block": "minecraft:structure_void",
+				"item": {
+					"nbt": "{CustomModelData:300011}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "paint_b:place_block/purpleheart_stripped_log"
+	}
+}
